@@ -3,9 +3,9 @@ Um filtro do swagger para integrar com AWS gateway adicionando options header pa
 
 Créditos: asidis(https://stackoverflow.com/users/1942762/asidis)
 
-You can drive api gateway through x-amazon-apigateway-integration swagger extension.
+You can drive api gateway through [x-amazon-apigateway-integration swagger extension](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-swagger-extensions-integration.html).
 
-Using Swashbuckle document filter, you can generate a option operation on all your paths without corresponding action in your controller.
+Using Swashbuckle [document filter](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#extend-generator-with-operation-schema--document-filters), you can generate a option operation on all your paths without corresponding action in your controller.
 
 Here is a sample code that will generate an option operation for all paths in your swagger and add use swagger extensions to generate a mock in api gateway on these OPTION methods:
 
